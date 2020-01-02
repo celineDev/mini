@@ -6,141 +6,104 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Formulaire</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="newsletter.css">
 </head>
 <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
         </div>
-      </nav>
-      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="..." class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
-              </div>
+    </nav>
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://picsum.photos/1920/1080" class="d-block w-100" alt="image">
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
+            <div class="carousel-item">
+                <img src="https://picsum.photos/1920/1080" class="d-block w-100" alt="image">
+            </div>
+            <div class="carousel-item">
+                <img src="https://picsum.photos/1920/1080" class="d-block w-100" alt="image">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
 </header>
+
 <body>
-    <form class="needs-validation" novalidate>
-        <div class="form-row">
-          <div class="col-md-4 mb-3">
-            <label for="validationCustom01">First name</label>
-            <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
-            <div class="valid-feedback">
-              Looks good!
+    <section class="newsletter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="content">
+                        <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                            <span class="input-group-btn">
+                                <button class="btn" type="submit">Subscribe Now</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <label for="validationCustom02">Last name</label>
-            <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
-            <div class="valid-feedback">
-              Looks good!
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <label for="validationCustomUsername">Username</label>
-            <div class="input-group">
-              <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroupPrepend">@</span>
-              </div>
-              <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
-              <div class="invalid-feedback">
-                Please choose a username.
-              </div>
-            </div>
-          </div>
         </div>
-        <div class="form-row">
-          <div class="col-md-6 mb-3">
-            <label for="validationCustom03">City</label>
-            <input type="text" class="form-control" id="validationCustom03" required>
-            <div class="invalid-feedback">
-              Please provide a valid city.
-            </div>
-          </div>
-          <div class="col-md-3 mb-3">
-            <label for="validationCustom04">State</label>
-            <select class="custom-select" id="validationCustom04" required>
-              <option selected disabled value="">Choose...</option>
-              <option>...</option>
-            </select>
-            <div class="invalid-feedback">
-              Please select a valid state.
-            </div>
-          </div>
-          <div class="col-md-3 mb-3">
-            <label for="validationCustom05">Zip</label>
-            <input type="text" class="form-control" id="validationCustom05" required>
-            <div class="invalid-feedback">
-              Please provide a valid zip.
-            </div>
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-            <label class="form-check-label" for="invalidCheck">
-              Agree to terms and conditions
-            </label>
-            <div class="invalid-feedback">
-              You must agree before submitting.
-            </div>
-          </div>
-        </div>
-        <button class="btn btn-primary" type="submit">Submit form</button>
-      </form>
-      
-      <script>
-      // Example starter JavaScript for disabling form submissions if there are invalid fields
-      (function() {
-        'use strict';
-        window.addEventListener('load', function() {
-          // Fetch all the forms we want to apply custom Bootstrap validation styles to
-          var forms = document.getElementsByClassName('needs-validation');
-          // Loop over them and prevent submission
-          var validation = Array.prototype.filter.call(forms, function(form) {
-            form.addEventListener('submit', function(event) {
-              if (form.checkValidity() === false) {
-                event.preventDefault();
-                event.stopPropagation();
-              }
-              form.classList.add('was-validated');
+    </section>
+
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
             }, false);
-          });
-        }, false);
-      })();
-      </script>
-</body>
-</html>
+        })();
+    </script>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small special-color-dark pt-4">
+        <!-- Footer Elements -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+</body></html>
